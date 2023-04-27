@@ -7,10 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
@@ -146,38 +142,7 @@
   font-family: inherit;
   font-weight: inherit;
 }
-#es-essentia.es-essentia .swiper-button-next,
-#es-essentia.es-essentia .swiper-button-prev {
-  top: auto;
-  bottom: 16px;
-  width: auto;
-  height: auto;
-}
-#es-essentia.es-essentia .swiper-button-next:after {
-  content: "";
-  background-image: url(img/arrow-right.webp);
-  background-size: 100% 100%;
-  width: 28px;
-  height: 28px;
-}
-#es-essentia.es-essentia .swiper-button-prev:after {
-  content: "";
-  background-image: url(img/arrow-left.webp);
-  background-size: 100% 100%;
-  width: 28px;
-  height: 28px;
-}
-#es-essentia.es-essentia .swiper-pagination-bullet {
-  background: #fff;
-  border: 1px solid #506f13;
-  opacity: 1;
-  margin: 2px;
-  height: 16px;
-  width: 16px;
-}
-#es-essentia.es-essentia .swiper-pagination-bullet-active {
-  background: #506f13;
-}
+
 #es-essentia.es-essentia .es-kv {
   position: relative;
   margin-bottom: 100px;
@@ -256,7 +221,7 @@
 }
 #es-essentia.es-essentia .es-articles {
   margin: 20px 0;
-  padding: 40px 10px;
+  padding: 20px 10px;
   background-image: url(./img/dosage-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -356,7 +321,7 @@
   font-weight: 500;
   color: #fff;
   font-size: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 #es-essentia.es-essentia .es-support__items {
   display: flex;
@@ -372,7 +337,7 @@
   gap: 8px;
 }
 #es-essentia.es-essentia .es-support__item {
-  gap: 16px;
+  gap: 10px;
 }
 #es-essentia.es-essentia .es-support__item--full {
   width: 100%;
@@ -381,7 +346,7 @@
   max-width: 45px;
 }
 #es-essentia.es-essentia .es-support__icon--big {
-  max-width: 87px;
+  max-width: 57px;
 }
 #es-essentia.es-essentia .es-support__text, #es-essentia.es-essentia .es-support__desc {
   color: #fff;
@@ -430,11 +395,14 @@
 #es-essentia.es-essentia .es-dosage__text {
   color: #fff;
   font-weight: 300;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 #es-essentia.es-essentia .es-dosage__mainCtn {
   display: flex;
   flex-direction: column;
+}
+#es-essentia.es-essentia .es-hide{
+  display: none;
 }
 #es-essentia.es-essentia .es-dosage__items {
   display: flex;
@@ -471,17 +439,10 @@
   background: #ffae00;
   transform: rotate(45deg);
 }
-#es-essentia.es-essentia .es-dosage__hide {
+#es-essentia.es-essentia .es-hide {
   display: none;
 }
-#es-essentia.es-essentia .es-info .swiper-button-next,
-#es-essentia.es-essentia .es-info .swiper-button-prev {
-  display: none;
-}
-#es-essentia.es-essentia .es-info .swiperNav .swiper-slide-thumb-active {
-  background: #506f13;
-  color: #fff;
-}
+
 #es-essentia.es-essentia .es-info__nav.swiper-wrapper {
   padding: 14px;
   display: none;
@@ -503,10 +464,10 @@
   text-align: center;
 }
 #es-essentia.es-essentia .es-info__link {
-  display: none;
   text-decoration: none;
   text-align: center;
   color: #000;
+  cursor: pointer;
 }
 #es-essentia.es-essentia .es-info__nav-text {
   text-align: center;
@@ -532,10 +493,12 @@
   background: url(img/slide-2-bg.webp) 100% 100%;
   background-size: cover;
   padding: 20px 14px;
-  padding-bottom: 56px;
+  padding-bottom: 26px;
 }
 #es-essentia.es-essentia .es-info__down--doctor {
   text-align: center;
+  padding: 10px 10px;
+  padding-bottom: 20px;
 }
 #es-essentia.es-essentia .es-info__content {
   align-self: center;
@@ -694,7 +657,7 @@
   display: block;
   margin-top: 50px;
 }
-#es-essentia.es-essentia .es-comp__hide {
+#es-essentia.es-essentia .es-hide {
   display: none;
 }
 #es-essentia.es-essentia .es-comp__title {
@@ -736,7 +699,7 @@
   right: -20%;
 }
 #es-essentia.es-essentia .es-desc {
-  padding: 30px 14px;
+  padding: 10px 14px;
 }
 #es-essentia.es-essentia .es-desc__item {
   color: #506f13;
@@ -782,7 +745,7 @@
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
-    min-height: 550px;
+    min-height: 500px;
   }
   #es-essentia.es-essentia .es-kv__title {
     font-size: 56px;
@@ -795,7 +758,7 @@
     left: auto;
     right: 40px;
     transform: translate(0, 0);
-    max-width: 420px;
+    max-width: 380px;
   }
   #es-essentia.es-essentia .es-kv__badge {
     top: 120px;
@@ -846,17 +809,17 @@
   #es-essentia.es-essentia .es-support {
     background: url(img/support-bg-1.webp) no-repeat 100% 100%;
     background-size: cover;
-    background-position: 60%;
+    background-position: 58%;
   }
   #es-essentia.es-essentia .es-support .swiper-button-prev,
   #es-essentia.es-essentia .es-support .swiper-button-next {
     display: flex;
   }
   #es-essentia.es-essentia .es-support__content {
-    padding-bottom: 32px;
+    padding-bottom: 15px;
   }
   #es-essentia.es-essentia .es-support__title {
-    font-size: 36px;
+    font-size: 28px;
   }
   #es-essentia.es-essentia .es-support__item {
     width: 100%;
@@ -869,18 +832,18 @@
     max-width: 30%;
   }
   #es-essentia.es-essentia .es-support__icon {
-    max-width: 90px;
+    max-width: 80px;
   }
   #es-essentia.es-essentia .es-support__text-wrapper {
-    padding-top: 40px;
+    padding-top: 10px;
   }
   #es-essentia.es-essentia .es-support__subtitle {
-    font-size: 22px;
-    max-width: 40%;
+    font-size: 18px;
+    max-width: 50%;
   }
   #es-essentia.es-essentia .es-support__desc {
-    max-width: 36%;
-    font-size: 24px;
+    max-width: 40%;
+    font-size: 16px;
   }
   #es-essentia.es-essentia .es-support__square {
     position: relative;
@@ -892,15 +855,18 @@
     display: flex;
   }
   #es-essentia.es-essentia .es-dosage__title {
-    font-size: 56px;
+    font-size: 36px;
   }
   #es-essentia.es-essentia .es-dosage__arrow {
-    font-size: 36px;
+    font-size: 26px;
   }
   #es-essentia.es-essentia .es-dosage__mainCtn {
     display: flex;
     flex-direction: row;
   }
+  #es-essentia.es-essentia .es-hide{
+  display: none;
+}
   #es-essentia.es-essentia .es-dosage__wrapper {
     max-width: 45%;
   }
@@ -908,11 +874,11 @@
     flex-direction: column;
   }
   #es-essentia.es-essentia .es-dosage__text {
-    max-width: 60%;
-    font-size: 24px;
+    max-width: 70%;
+    font-size: 20px;
   }
   #es-essentia.es-essentia .es-dosage__img {
-    max-width: none;
+    max-width: 100px;
   }
   #es-essentia.es-essentia .es-dosage__items {
     padding: 24px 0;
@@ -948,7 +914,7 @@
     display: block;
   }
   #es-essentia.es-essentia .es-info__desc {
-    font-size: 24px;
+    font-size: 20px;
   }
   #es-essentia.es-essentia .es-info__asset--mobile {
     display: none;
@@ -957,16 +923,16 @@
     display: block;
   }
   #es-essentia.es-essentia .es-info__title {
-    font-size: 32px;
+    font-size: 28px;
   }
   #es-essentia.es-essentia .es-info__text {
-    font-size: 24px;
+    font-size: 20px;
   }
   #es-essentia.es-essentia .es-comp {
     padding-bottom: 0;
   }
   #es-essentia.es-essentia .es-comp__title {
-    font-size: 56px;
+    font-size: 36px;
   }
   #es-essentia.es-essentia .es-comp__content--mobile {
     display: none;
@@ -975,7 +941,7 @@
     display: block;
   }
   #es-essentia.es-essentia .es-comp__arrow {
-    font-size: 36px;
+    font-size: 26px;
     color: #fff;
     font-weight: 500;
   }
@@ -999,7 +965,7 @@
     font-size: 24px;
   }
   #es-essentia.es-essentia .es-comp__text {
-    font-size: 24px;
+    font-size: 20px;
   }
   #es-essentia.es-essentia .es-comp__mg {
     min-width: 300px;
@@ -1008,19 +974,19 @@
   #es-essentia.es-essentia .es-comp__img {
     right: 0;
     margin-top: -27px;
-    max-width: 500px;
+    max-width: 400px;
   }
   #es-essentia.es-essentia .es-comp__texts {
     margin-right: 0;
   }
   #es-essentia.es-essentia .es-disclaimer__title {
-    font-size: 32px;
+    font-size: 28px;
   }
   #es-essentia.es-essentia .es-disclaimer__item {
-    font-size: 16px;
+    font-size: 14px;
   }
   #es-essentia.es-essentia .es-desc__item {
-    font-size: 16px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
     </style>
@@ -1114,39 +1080,7 @@
       <div id="korzysci" class="es-support">
         <p class="es-support__title">Proaktywne wsparcie prawidłowego <br> funkcjonowania:</p>
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="es-support__content">
-              <div class="es-support__items">
-                <div class="es-support__item">
-                  <img
-                    src="img/support-1.webp"
-                    alt="Obrazek wątroby, obok informacja o detoksykacji, jednej z najważniejszych funkcji wątroby."
-                    class="es-support__icon"
-                  />
-                  <p class="es-support__text">wątroby, w tym detoksykacji<sup>3</sup></p>
-                </div>
-                <div class="es-support__item">
-                  <img
-                    src="img/support-2.webp"
-                    alt="Ilustracja komórek, obok informacja o funkcji metabolicznej wątroby; cholina wspomaga transportowanie tłuszczów i cholesterolu w organizmie. "
-                    class="es-support__icon"
-                  />
-                  <p class="es-support__text">metabolizmu tłuszczów<sup>1</sup></p>
-                </div>
-                <div class="es-support__item es-support__item--full">
-                  <img
-                    src="img/support-3.webp"
-                    alt="Witaminy C i E to antyoksydanty, które dbają o zdrowie wątroby i chronią komórki przed stresem oksydacyjnym."
-                    class="es-support__icon"
-                  />
-                  <p class="es-support__text">
-                    ochrona komórek przed <br>
-                    stresem oksydacyjnym<sup>5</sup>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        
           <div class="swiper-slide">
             <div class="es-support__content">
               <div class="es-support__items">
@@ -1170,8 +1104,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+
             <div class="es-support__content">
               <div class="es-support__items">
                 <div class="es-support__item es-support__item--single">
@@ -1193,8 +1126,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+
             <div class="es-support__content">
               <div class="es-support__items">
                 <div class="es-support__item es-support__item--single">
@@ -1219,6 +1151,7 @@
               </div>
             </div>
           </div>
+          
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -1233,53 +1166,26 @@
         <div thumbsSlider="" class="swiper swiperNav">
           <div class="swiper-wrapper es-info__nav">
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Zachowuj aktywny<br />
-                tryb życia
-              </p>
               <a href="#aktywny" class="es-info__link"
                 >Zachowuj aktywny<br />
                 tryb życia</a>
             </div>
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Wspieraj swój <br>
-                metabolizm
-              </p>
               <a href="#metabolizm" class="es-info__link"
                 >Wspieraj swój <br>
                 metabolizm</a>
             </div>
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Utrzymaj poziom <br>
-                energii
-              </p>
               <a href="#energia" class="es-info__link"
                 >Utrzymaj poziom <br>
                 energii</a>
             </div>
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Wspieraj wątrobę <br>
-                w procesie <br>
-                detoksykacji
-              </p>
               <a href="#detoks" class="es-info__link"
                 >Wspieraj wątrobę <br>
                 w procesie <br>
                 detoksykacji</a>
             </div>
-            <!-- <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Więcej<br />
-                o wątrobie
-              </p>
-              <a href="#wiecej" class="es-info__link"
-                >Więcej<br />
-                o wątrobie</a
-              >
-            </div> -->
           </div>
         </div>
         
@@ -1465,7 +1371,7 @@
           <p class="es-dosage__title">Stosowanie</p>
           <p class="es-dosage__arrow">Rozwiń &darr;</p>
         </div>
-       <div class="es-dosage__mainCtn es-dosage__hide">
+       <div class="es-dosage__mainCtn es-hide">
         <div class="es-dosage__wrapper"> 
           <p class="es-dosage__text">
             Zalecana dawka dzienna dla dorosłych to 2 kapsułki raz dziennie.
@@ -1496,11 +1402,11 @@
       </div>
 
       <div id="sklad" class="es-comp">
-        <div class="es-comp__btn" id="es-comp__btn">
+        <div class="es-comp__btn es-comp__btn" >
           <p class="es-comp__title">Unikalny skład<sup>4</sup></p>
           <p class="es-comp__arrow"> Rozwiń &darr;</p>
         </div>
-       <div class="es-comp__hiddenCtn es-comp__hide">
+       <div class="es-comp__hiddenCtn es-hide">
         <div class="es-comp__content es-comp__content--mobile">
           <div class="es-comp__texts">
             <p class="es-comp__text">Zawartość składników w zalecanej porcji dziennej <br>
@@ -1770,72 +1676,21 @@
       </div>
     </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.es-support', {
-        loop: true,
-
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-
-        scrollbar: {
-          el: '.swiper-scrollbar'
-        }
-      })
-    </script>
-    <!-- slider with navigation -->
-    <script>
-      // navigation
-      const swiperNav = new Swiper('.swiperNav', {
-        spaceBetween: 10,
-        slidesPerView: 4,
-      })
-      // slider
-      const swiper2 = new Swiper('.swiper2', {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        thumbs: {
-          swiper: swiperNav
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
-      })
-    </script>
     <script>
       
-    const hiddenContent = document.querySelector('.es-comp__hiddenCtn')
-    const toggleBtn = document.querySelector('#es-comp__btn')
+    const hiddenContent = document.querySelector('.es-comp__hiddenCtn');
+    const toggleBtn = document.querySelector('.es-comp__btn');
+    const hiddenDosage = document.querySelector('.es-dosage__mainCtn');
+    const toggleBtnDosage = document.querySelector('.es-dosage__btn');
 
+    const toggleContent = (ctn)=> {
+      ctn.classList.toggle('es-hide');
+    }
 
-      toggleBtn.addEventListener('click', ()=>{
-        hiddenContent.classList.toggle('es-comp__hide');
-        
-        });
+    toggleBtn.addEventListener('click',()=> toggleContent(hiddenContent));
+    toggleBtnDosage.addEventListener('click',()=> toggleContent(hiddenDosage));
+    
     </script>
-       <script>
-      
-        const hiddenDosage = document.querySelector('.es-dosage__mainCtn')
-        const toggleBtnDosage = document.querySelector('.es-dosage__btn')
-    
-    
-          toggleBtnDosage.addEventListener('click', ()=>{
-            hiddenDosage.classList.toggle('es-dosage__hide');
-
-            });
-        </script>
         <script defer> $(".es-nav__link").click(function() { var idik = $(this).attr('data-href'); $('html, body').animate({ scrollTop: $(idik).offset().top -110+'px' }); });</script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"> </script>
       </body>
