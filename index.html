@@ -442,6 +442,11 @@
 #es-essentia.es-essentia .es-hide {
   display: none;
 }
+#es-essentia.es-essentia .es-info__btn {
+background: url(img/slide-bg.webp);
+padding: 14px;
+}
+
 
 #es-essentia.es-essentia .es-info__nav.swiper-wrapper {
   padding: 14px;
@@ -1178,7 +1183,8 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-<div id="stosowanie" class="es-dosage">
+
+      <div id="stosowanie" class="es-dosage">
         <div class="es-dosage__btn">
           <p class="es-dosage__title">Stosowanie</p>
           <p class="es-dosage__arrow">Rozwiń &darr;</p>
@@ -1427,10 +1433,15 @@
               allowfullscreen></iframe>
             </div>
         </div>
-    </div>
+      </div>
 
       <div id="styl" class="es-info">
-        <div id="jak-dbac" class="swiper swiper2">
+        <details>
+          <summary class="es-dosage__btn es-info__btn">
+            <p class="es-dosage__title">Czy wiesz, że?</p>
+            <p class="es-dosage__arrow">Rozwiń &darr;</p>
+          </summary>
+          <div id="jak-dbac" class="swiper swiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div id="aktywny" class="es-info__slide">
@@ -1591,6 +1602,9 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
+        </details>
+        
+        
       </div>
 
       
