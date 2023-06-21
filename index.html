@@ -665,10 +665,29 @@
       padding: 14px;
       font-size: 20px;
     }
-
+/* make the table scroll */
     #es-essentia.es-essentia .es-table__wrapper {
       overflow-x: scroll;
+      -webkit-overflow-scrolling: auto;
       padding-bottom: 15px;
+    }
+@media (min-width: 622px) {
+  #es-essentia.es-essentia .es-table__wrapper {
+    overflow-x: hidden;
+  }
+}
+    #es-essentia.es-essentia ::-webkit-scrollbar:vertical {
+   width: 10px;
+    }
+    #es-essentia.es-essentia ::-webkit-scrollbar:horizontal {
+   height: 10px;
+    }
+    #es-essentia.es-essentia ::-webkit-scrollbar-thumb {
+   background-color: #ccc;
+   border-radius: 10px;
+    }
+    #es-essentia.es-essentia ::-webkit-scrollbar-track { 
+   background-color: #eee; 
     }
 
     #es-essentia.es-essentia .es-table__green--top {
@@ -1149,9 +1168,9 @@
       }
 
       #es-essentia.es-essentia .es-info__down {
-        background: url(img/dosage-bg-dt.webp) no-repeat 100% 100%;
-        background-position: left;
-        background-size: cover;
+        /* background: url(img/dosage-bg-dt.webp) no-repeat 100% 100%; */
+        background-position: 0 -61px;
+        
       }
 
       #es-essentia.es-essentia .es-info__img--mobile {
@@ -1731,7 +1750,7 @@
         </summary>
 
         <div id="jak-dbac">
-          <div class="swiper-wrapper">
+          
             <div>
               <div id="aktywny" class="es-info__slide">
 
@@ -1872,10 +1891,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          
+          
         </div>
       </details>
 
